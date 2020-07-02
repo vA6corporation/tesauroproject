@@ -5,8 +5,8 @@
       form.form-signin.text-white(@submit.prevent='submit')
         //- img.mb-4.rounded-circle(src='@/assets/user.svg', alt='', width='72', height='72')
         .title.text-center
-          .display-4 Mister 
-          .display-3.mb-5 Courier
+          //-.display-4 Tesauro 
+          .display-3.mb-5 Tesauro
         label.sr-only(for='inputEmail') Email
         input#inputEmail.form-control(type='email', v-model='localUser.email' placeholder='Email', required, autofocus)
         label.sr-only(for='inputPassword') Contraseña
@@ -71,7 +71,7 @@ export default {
 
 <style scoped>
 .container-fluid {
-  background-image: url('../assets/cafeRacer.jpg');
+  background-image: url('../assets/login-background.jpg');
   background-size: cover;
   background-position: bottom;
 }

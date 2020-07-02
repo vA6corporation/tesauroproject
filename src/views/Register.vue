@@ -4,14 +4,14 @@
       form.col(@submit.prevent='submit')
         h1 Registro
         hr
-        .row.form-group
+        //-.row.form-group
           label.col-md-3.col-form-label Celular de contacto
           .col
             input.form-control(type='text' placeholder='Celular de contacto' v-model='localUser.phoneNumber' required)
         .row.form-group
-          label.col-md-3.col-form-label Nombres/Razon Social
+          label.col-md-3.col-form-label Nombres
           .col
-            input.form-control(type='text' placeholder='Nombres/Razon Social' v-model='localUser.name' required)
+            input.form-control(type='text' placeholder='Nombres' v-model='localUser.name' required)
         .row.form-group
           label.col-md-3.col-form-label Email
           .col

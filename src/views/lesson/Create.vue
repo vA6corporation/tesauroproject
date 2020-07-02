@@ -85,8 +85,8 @@ export default {
       // this.player.play();
     },
     submit() {
-      var storageRef = storage.ref();
-      var fileRef = storageRef.child(`videos/${this.uniqueId()}`);
+      // var storageRef = storage.ref();
+      var fileRef = storage.child(`videos/${this.uniqueId()}`);
       this.uploadTask = fileRef.put(this.file);
       this.uploadTask.then(() => {
         console.log('subido');

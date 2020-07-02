@@ -4,6 +4,11 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
   const routes = [
+    { path: '/details', name: 'result', component: () => import('@/views/Details') },
+    { path: '/result', name: 'result', component: () => import('@/views/Result') },
+    { path: '/classification', name: 'classification', component: () => import('@/views/Classification') },
+    { path: '/recent', name: 'recent', component: () => import('@/views/Recent') },
+    { path: '/publication', name: 'publications', component: () => import('@/views/Publication') },
     { path: '/profile', name: 'profile', component: () => import('@/views/Profile') },
     { path: '/videos', name: 'videos', component: () => import('@/views/lesson/Create') },
     { path: '/home', name: 'home', component: () => import('@/views/Home') },

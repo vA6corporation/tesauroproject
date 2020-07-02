@@ -1,19 +1,27 @@
 <template lang='pug'>
 nav.navbar.navbar-expand-md.navbar-dark.bg-dark(v-if='user')
   .container
-    router-link.navbar-brand(to='/home') M.Courier
+    router-link.navbar-brand(to='/home') Tesauro
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample07', aria-controls='navbarsExample07', aria-expanded='false', aria-label='Toggle navigation')
       span.navbar-toggler-icon
     .collapse.navbar-collapse.ml-5
       ul.navbar-nav.mx-auto
         li.nav-item.active.mr-3
           router-link.nav-link(to='/home')
-            feather.feather-md.mr-2(type='map-pin')
-            | Seguimiento
+            feather.feather-md.mr-2(type='search')
+            | Busqueda
         li.nav-item.active.mr-3
-          router-link.nav-link(to='/express')
-            feather.feather-md.mr-2(type='truck')
-            | Envios Express
+          router-link.nav-link(to='/recent')
+            feather.feather-md.mr-2(type='clock')
+            | Recientes
+        li.nav-item.active.mr-3
+          router-link.nav-link(to='/publication')
+            feather.feather-md.mr-2(type='book')
+            | Publicacion
+        li.nav-item.active.mr-3
+          router-link.nav-link(to='/classification')
+            feather.feather-md.mr-2(type='globe')
+            | Clasificacion
         li.nav-item.active.mr-3
           router-link.nav-link(to='/profile')
             feather.feather-md.mr-2(type='user')
@@ -26,7 +34,7 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-dark(v-if='user')
           router-link.nav-link(to='/blog')
             feather.feather-md.mr-2(type='message-square')
             | Foro
-        li.nav-item.active
+        //-li.nav-item.active
           router-link.nav-link(to='/dashboard')
             feather.feather-md.mr-2(type='settings')
             | Admin
